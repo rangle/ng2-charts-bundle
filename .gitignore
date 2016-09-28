@@ -11,6 +11,7 @@ npm-debug.log
 .vscode
 
 # ignore build and dist for now
+/bundles
 /demo-build
 /dist
 /coverage
