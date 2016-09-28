@@ -28,8 +28,8 @@
     "version": "npm run flow.changelog && git add -A",
     "postversion": "git push origin development && git push --tags"
   },
-  "main": "./ng2-charts.js",
-  "typings": "./ng2-charts.d.ts",
+  "main": "ng2-charts.js",
+  "typings": "ng2-charts.d.ts",
   "keywords": [
     "angular2",
     "angularjs",
