@@ -22,12 +22,6 @@ npm-debug.log
 /demo/**/*.js.map
 /demo/**/*.d.ts
 !/demo/custom-typings.d.ts
-/components/**/*.js
-/components/**/*.js.map
-/components/**/*.d.ts
-ng2-charts.js
-ng2-charts.d.ts
-ng2-charts.js.map
 /logs
 
 factories
