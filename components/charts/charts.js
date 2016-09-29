@@ -26,13 +26,15 @@ var BaseChartComponent = (function () {
     };
     BaseChartComponent.prototype.ngOnChanges = function (changes) {
         if (this.initFlag) {
-            // Check if the changes are in the data or datasets
-            if (changes.hasOwnProperty('data') || changes.hasOwnProperty('datasets')) {
-                this.chart.data.datasets = this.getDatasets();
-                this.chart.update();
-            }
-            else {
-                this.refresh();
+            if (this.chart) {
+                // Check if the changes are in the data or datasets
+                if (changes.hasOwnProperty('data') || changes.hasOwnProperty('datasets')) {
+                    this.chart.data.datasets = this.getDatasets();
+                    this.chart.update();
+                }
+                else {
+                    this.refresh();
+                }
             }
         }
     };
